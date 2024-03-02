@@ -69,14 +69,14 @@
         {%- for item in resume.social -%}
           <a href="{{ item[1] }}" class="icon-link" itemprop="sameAs" target="_blank">
             {%- case item[0] -%}
-              {%- when "GitHub"    -%}<img src="{{ site.baseurl }}/img/socialicons/github.svg">
-              {%- when "Twitter"   -%}<img src="{{ site.baseurl }}/img/socialicons/twitter.svg">
-              {%- when "Medium"    -%}<img src="{{ site.baseurl }}/img/socialicons/medium.svg">
-              {%- when "Dribbble"  -%}<img src="{{ site.baseurl }}/img/socialicons/dribbble.svg">
-              {%- when "Facebook"  -%}<img src="{{ site.baseurl }}/img/socialicons/facebook.svg">
-              {%- when "LinkedIn"  -%}<img src="{{ site.baseurl }}/img/socialicons/linkedin.svg">
-              {%- when "Instagram" -%}<img src="{{ site.baseurl }}/img/socialicons/instagram.svg">
-              {%- when "Website"   -%}<img src="{{ site.baseurl }}/img/socialicons/website.svg">
+              {%- when "GitHub"    -%}<img src="{{ site.baseurl }}{{ post.url }}/img/socialicons/github.svg">
+              {%- when "Twitter"   -%}<img src="{{ site.baseurl }}{{ post.url }}/img/socialicons/twitter.svg">
+              {%- when "Medium"    -%}<img src="{{ site.baseurl }}{{ post.url }}/img/socialicons/medium.svg">
+              {%- when "Dribbble"  -%}<img src="{{ site.baseurl }}{{ post.url }}/img/socialicons/dribbble.svg">
+              {%- when "Facebook"  -%}<img src="{{ site.baseurl }}{{ post.url }}/img/socialicons/facebook.svg">
+              {%- when "LinkedIn"  -%}<img src="{{ site.baseurl }}{{ post.url }}/img/socialicons/linkedin.svg">
+              {%- when "Instagram" -%}<img src="{{ site.baseurl }}{{ post.url }}/img/socialicons/instagram.svg">
+              {%- when "Website"   -%}<img src="{{ site.baseurl }}{{ post.url }}/img/socialicons/website.svg">
             {%- endcase -%}
           </a>
         {%- endfor -%}
