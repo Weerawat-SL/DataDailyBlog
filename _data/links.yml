@@ -1,0 +1,23 @@
+- name: LinkedIn
+  url: https://www.linkedin.com/in/weerawat-s
+  label: weerawat
+
+# - name: Credly/Acclaim
+#   url: https://www.credly.com/users/weerawat-saelao
+#   label: weerawat
+
+- name: GitHub
+  url: https://github.com/Weerawat-SL
+  label: weerawat
+
+# - name: StackOverflow
+#   url: https://stackoverflow.com/users/3474677
+#   label: chad-baldwin
+
+# - name: PluralSight
+#   url: https://app.pluralsight.com/profile/chadbaldwin
+#   label: chadbaldwin
+
+- name: Microsoft Learn
+  url: hhttps://learn.microsoft.com/en-us/users/weerawatsaelao-7565/transcript/dwnqyc5kl8z404k
+  label: weerawat

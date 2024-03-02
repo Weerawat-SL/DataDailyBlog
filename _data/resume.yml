@@ -1,0 +1,38 @@
+theme: default
+header:
+  name: Weerawat Saelao
+  suffix: 
+  display_contact_info: true
+  current_title: Data Engineer
+  intro: >
+    Self-motivated data engineer with a strong penchant for learning and adapting quickly. 
+    Committed to lifelong learning and seeking opportunities for continuous self-development. 
+    With six years of engineering design experience, proficient in analyzing, comparing, 
+    and optimizing solutions. Possesses two years of experience as a data engineer, 
+    adept at managing data relationships, designing pipelines, 
+    and preparing data in Oracle,Bigquery and other data warehouses for reporting using SSRS 
+    and Power BI with multi-dimensional data. Skilled in enhancing performance for large-scale 
+    data and implementing Airflow to connect APIs to cloud services.
+contact:
+  #address: 123 Main St, Test, CA 91234
+  #phone: (123) 456-7890
+  email: weerawat_s@outlook.co.th
+sections:
+  experience:   true
+  education:    true
+  projects:     false
+  skills:       true
+  recognition:  true
+  associations: false
+  interests:    false
+  links:        true
+  social_links: false
+social:
+  # Website:    http://chadbaldwin.net
+  GitHub:     https://github.com/Weerawat-SL
+  # Twitter:    https://twitter.com/chad_baldwin
+  #Dribbble:  https://dribbble.com/chadbaldwin
+  #FaceBook:  https://facebook.com/iamchadbaldwin
+  LinkedIn:   https://linkedin.com/in/Weerawat-s
+  #Instagram: https://instagram.com/chad_baldwin
+  #Medium:    https://medium.com/@chad-baldwin

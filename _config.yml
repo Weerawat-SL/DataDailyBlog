@@ -40,3 +40,6 @@ defaults:
       type: post
     values:
       tags: Other
+
+gravatar_hash: B324C797203CBC7D190F1B5ACB0446453E8592F1B0B2E67DC2ED70D4237F68D0
+

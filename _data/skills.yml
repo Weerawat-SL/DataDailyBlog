@@ -1,0 +1,60 @@
+#- skill: string
+#  description: string
+#  list:
+#    - array
+#    - of
+#    - strings
+#
+# Template supports both a description AND a skill list, however it may look best if only one or the
+# other is used. Lists are sorted and concatenated without line breaks separated by • (&bull;)
+
+- skill: Database Design, Development, and Reporting
+  description: "Experienced in database/schema design, query tuning, index optimization, SQL development, troubleshooting locking and blocking issues, data analysis, custom reporting, and data visualization."
+- skill: ETL/ELT Development
+  description: "Proficient in designing data ingestion ETL/ELT processes between OLTP and OLAP systems, maintaining and monitoring systems for continuous operation, planning database system migration projects, and performing data cleansing."
+- skill: Tools & Technologies
+  list:
+############################# Cloud #############################
+    - Azure BLob Storage/Data lake Gen2
+    - Azure SQL Database
+    - Azure Data Studio (ADS)
+    - Azure Data Factory (ADF)
+    - AWS EC2
+    - AWS S3
+    - Google Cloud Storage
+    - Bigquery
+############################# Database Tools #############################
+    # - DBATools
+    # - SQL Server Data Tools (SSDT)
+    - SQL Server Management Studio (SSMS)
+    # - SQL Server Profiler
+    - SQL Server Reporting Services (SSRS)
+    - MySQL
+    - SQL Server
+    - Oracal
+    - PostgreSQL
+    - Snowflake
+############################# ETL Tools #############################
+    # - RabbitMQ
+    # - Kafka
+    - Airflow
+    # - Dagster
+############################# Tools #############################
+    - Docker
+    - Excel
+    - Git    
+    - Postman
+    - PowerShell
+    - VS Code
+    - Power BI
+############################# Other #############################
+    # - Confluence
+    # - Jira
+############################# Skill #############################
+    - SQL Language
+    - Python
+    - Web Scraping
+    - Linux
+
+
+
