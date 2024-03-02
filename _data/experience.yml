@@ -42,15 +42,15 @@
       - Designed report table, Prepared data to report table.
       - Optimized and Designed data quality report by SSRS, Power BI.
 
-- company: "Fusion Fire Safety Co.,Ltd"
-  summary: "Fusion Fire Safety operates as an engineering consultancy specializing in fire safety and disaster prevention. The company is an expert in FIRE & LIFE SAFETY on an international level and is one of the pioneers in Thailand specializing in NFPA Code. They actively participate in large-scale projects both domestically and internationally."
-  logo: "https://fusionfiresafety.com/wp-content/uploads/2019/09/fusionfire-logo-01.png"
-  url: "https://fusionfiresafety.com/"
-  positions: 
-  - title: "Fire Protection Engineer/Sanitary Engineer"
-    startdate: 2022-01-04
-    enddate: 2022-02-28
-    summary: "Provide design, consultation, and inspection services for fire Protection systems, healthcare systems, and wastewater treatment systems according to the principles of the Engineering Institute of Thailand, NFPA, and other international standards."
+# - company: "Fusion Fire Safety Co.,Ltd"
+#   summary: "Fusion Fire Safety operates as an engineering consultancy specializing in fire safety and disaster prevention. The company is an expert in FIRE & LIFE SAFETY on an international level and is one of the pioneers in Thailand specializing in NFPA Code. They actively participate in large-scale projects both domestically and internationally."
+#   logo: "https://fusionfiresafety.com/wp-content/uploads/2019/09/fusionfire-logo-01.png"
+#   url: "https://fusionfiresafety.com/"
+#   positions: 
+#   - title: "Fire Protection Engineer/Sanitary Engineer"
+#     startdate: 2022-01-04
+#     enddate: 2022-02-28
+#     summary: "Provide design, consultation, and inspection services for fire Protection systems, healthcare systems, and wastewater treatment systems according to the principles of the Engineering Institute of Thailand, NFPA, and other international standards."
 #     projects:
 #       - "Designed Fire Protection systems for the assigned project."
 #       - "Coordinated engineering information for the assigned project."
