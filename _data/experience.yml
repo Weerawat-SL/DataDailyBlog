@@ -42,30 +42,30 @@
       - Designed report table, Prepared data to report table.
       - Optimized and Designed data quality report by SSRS, Power BI.
 
-# - company: "Fusion Fire Safety Co.,Ltd"
-#   summary: "Fusion Fire Safety operates as an engineering consultancy specializing in fire safety and disaster prevention. The company is an expert in FIRE & LIFE SAFETY on an international level and is one of the pioneers in Thailand specializing in NFPA Code. They actively participate in large-scale projects both domestically and internationally."
-#   logo: "https://fusionfiresafety.com/wp-content/uploads/2019/09/fusionfire-logo-01.png"
-#   url: "https://fusionfiresafety.com/"
-#   positions: 
-#   - title: "Fire Protection Engineer/Sanitary Engineer"
-#     startdate: 2022-01-04
-#     enddate: 2022-02-28
-#     summary: "Provide design, consultation, and inspection services for fire Protection systems, healthcare systems, and wastewater treatment systems according to the principles of the Engineering Institute of Thailand, NFPA, and other international standards."
+- company: "Fusion Fire Safety Co.,Ltd"
+  summary: "Fusion Fire Safety operates as an engineering consultancy specializing in fire safety and disaster prevention. The company is an expert in FIRE & LIFE SAFETY on an international level and is one of the pioneers in Thailand specializing in NFPA Code. They actively participate in large-scale projects both domestically and internationally."
+  logo: "https://fusionfiresafety.com/wp-content/uploads/2019/09/fusionfire-logo-01.png"
+  url: "https://fusionfiresafety.com/"
+  positions: 
+  - title: "Fire Protection Engineer/Sanitary Engineer"
+    startdate: 2022-01-04
+    enddate: 2022-02-28
+    summary: "Provide design, consultation, and inspection services for fire Protection systems, healthcare systems, and wastewater treatment systems according to the principles of the Engineering Institute of Thailand, NFPA, and other international standards."
 #     projects:
 #       - "Designed Fire Protection systems for the assigned project."
 #       - "Coordinated engineering information for the assigned project."
 #       - "Reviewed and consulted fire protection system refer local code, International Standards."
 #       - "Consulted and solved engineering problems on the construction site."
 
-# - company: "Meinhardt (Thailand) ,Ltd"
-#   summary: "Meinhardt operates as an engineering consultancy services in Civil, Structural, Mechanical, Electrical, Plumbing, Project Management, Construction Management, Environmentally Sustainable Design, Transport Planning, Façade Design, Lighting Design, Building Information Modeling, Infrastructure, and Smart Buildings."
-#   logo: "https://media.licdn.com/dms/image/C560BAQF859gZEkoo8A/company-logo_200_200/0/1676866772741/meinhardt_thailand_logo?e=2147483647&v=beta&t=YjUnhLKOpcTu8387grOHd84SEc4WczmFyOUiqM33kRc"
-#   url: "https://www.meinhardt.net/"
-#   positions: 
-#   - title: "Sanitary Engineer"
-#     startdate: 2015-08-16
-#     enddate: 2021-06-30
-#     summary: "Designed building systems (Water Supply System, Sewage System, Wastewater Treatment System, Swimming Pool System, Fire Protection System) for the assigned project., Coordinated engineering information for the assigned project., Controlled the quality of drawings for permission, biding, and construction, with the Auto-cad and Revit program., Consulted and solved engineering problems on the construction site."
+- company: "Meinhardt (Thailand) ,Ltd"
+  summary: "Meinhardt operates as an engineering consultancy services in Civil, Structural, Mechanical, Electrical, Plumbing, Project Management, Construction Management, Environmentally Sustainable Design, Transport Planning, Façade Design, Lighting Design, Building Information Modeling, Infrastructure, and Smart Buildings."
+  logo: "https://media.licdn.com/dms/image/C560BAQF859gZEkoo8A/company-logo_200_200/0/1676866772741/meinhardt_thailand_logo?e=2147483647&v=beta&t=YjUnhLKOpcTu8387grOHd84SEc4WczmFyOUiqM33kRc"
+  url: "https://www.meinhardt.net/"
+  positions: 
+  - title: "Sanitary Engineer"
+    startdate: 2015-08-16
+    enddate: 2021-06-30
+    summary: "Designed building systems (Water Supply System, Sewage System, Wastewater Treatment System, Swimming Pool System, Fire Protection System) for the assigned project., Coordinated engineering information for the assigned project., Controlled the quality of drawings for permission, biding, and construction, with the Auto-cad and Revit program., Consulted and solved engineering problems on the construction site."
 #     projects:
 #       - Rawai Residences, Phuket, Resort
 #       - Radisson Karon Hotel and Lavender Hill Condominium, Karon, Phuket, Resort
