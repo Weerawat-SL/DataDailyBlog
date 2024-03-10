@@ -1,94 +1,24 @@
----
-layout: post
-title:  "DP-203: Data Engineering on Microsoft Azure/เตรียมสอบ"
-author: "Weerawat"
-tags: Certificate_Exam #[tag1, tag2, tag3]
-# opengraph: {{ site.baseurl }}/assets/image/DE.jpg
-# name: Jane Doe
-# position: Developer
----
-![alt text](/assets/AzureCerFlowDP203.png)
-
----
-
-**Table of Contents**
-- [**Microsoft Official Exam Prep**](#microsoft-official-exam-prep)
-  - [Introduction](#introduction)
-  - [Objectives Domain Review](#objectives-domain-review)
-  - [Design and implement data storage (15–20%)](#design-and-implement-data-storage-1520)
-  - [Develop data processing (40–45%)](#develop-data-processing-4045)
-  - [Secure, monitor, and optimize data storage and data processing (30–35%)](#secure-monitor-and-optimize-data-storage-and-data-processing-3035)
-
----
-
->_**คำเตือน** เนื้อหาต่อจากนี้เป็นเนื้อหาหัวข้อการสอบ**เท่านั้น** ซึ่งครอบคลุมแค่ไม่ได้ลงลึก ดังนั้น ต้องไปอ่านเพิ่ม และทำ Labs เองจากหัวข้อเหล่านี้_
-
-# **Microsoft Official Exam Prep**
-
 ![](/assets/DP203/00-cover.png)
+## Design and implement data storage (15–20%)
+Welcome to the exam prep video series on DP203 data engineering on Microsoft Azure my name is Steve Howard Microsoft technical trainer and I will be taking you through the video series let's review the journey you will go through to achieve this certification 
 
-## Introduction
 ![](/assets/DP203/01-Certification_journey.png)
-คอสที่แนะนำเบื่องต้นเพื่อเพิ่มความเข้าใจและประสบการณ์
-- Microsoft Azure Fundamentals AZ-900 : 
-  - Describe cloud concepts
-  - Describe Azure architecture and services
-  - Describe Azure management and governance
-- Microsoft Azure Administrator AZ-104: 
-  - Implement and manage virtual networking
-    - Configure and manage virtual networks in Azure
-  
-ซึ่งจะทำให้คุณเข้าใจภาพรวมของ
-- enterprise networking on premises or cloud infrastructure
-- network security
-- understand on premises virtualization technologies
-  - VMs 
-  - virtual networking 
-  - virtual hard disks 
-- network configurations 
-  - TCP IP 
-  - domain name systems 
-  - virtual private networks 
-  - firewalls 
-  - encryption technologies 
-- software defined networking 
-- hybrid network connectivity methods 
-- resilience 
-- disaster recovery including
-  -  high availability 
-  -  restore operations 
-
-
-ทั้งนี้เนื้อหาในส่วนนี้จะเป็นการไกด์ที่ครอบคลุมเนื้อหาที่สอบแต่ไม่ได้เจาะลึก ดังนั้นหลีกเลี่ยงไม่ได้ที่จะต้องไปศึกษาเพิ่มเติมและทดลองใช้งานผ่าน Lab ที่เตรียมไว้ให้
+let's now review where this exam prep video series it's within your certification journey you may have taken the official Microsoft training either self-paced online or the instructor LED training in addition the free online trainings mentioned as prerequisites will give you the experience you need to be successful in this area you should also have hands on experience in enterprise networking on premises or cloud infrastructure and network security and understand on premises virtualization technologies including VMS virtual networking and virtual hard disks network configurations including TCP IP domain name systems virtual private networks firewalls and encryption technologies software defined networking hybrid network connectivity methods resilience and disaster recovery including high availability and restore operations then comes this video series the official exam prep this set of videos is meant to help prepare you to take the exam by covering what types of questions you may see what topics may be covered and what resources you can use to study following these videos you should plan to study the topics you identified during your viewing there are a variety of resources available to you including labs documentation practice tests and more on the video page you will find links to a number of resources such as the study guide for the exam after your self study you should proceed with taking the exam so 
 
 ![](/assets/DP203/02-Objectives.png)
-เนื้อหาส่วนนี้มีวัตถุประสงค์เพื่อ
-1. ระบุสิ่งที่จะครอบคลุมในการสอบ
-2. กำหนดแนวคิดที่จะจัดลำดับความสำคัญสำหรับการศึกษาต่อ
-3. อธิบายรูปแบบคำถามสอบที่เป็นไปได้ที่แตกต่างกัน
-4. ค้นหา ทรัพยากรการเรียนรู้ที่พร้อมใช้งาน
+let's now discuss the objectives of this video series this exam prep video series will help you #1 identify what will be covered on the exam #2 determine which concepts to prioritize for further study #3 explained the different potential exam question formats and #4 locate available learning resources to utilize remember this video series is not a replacement for the Microsoft official training or your experience working in this space this series will help you learn what you can expect to see on the exam but it won't teach you the topics and concepts and detail you should expect to spend time following this series studying any areas you identify where you need more work let's now review the objective domain of the DP 203 exam 
 
-ดังนั้นจำไว้ว่า เนื้อหาส่วนนี้ไม่ได้อ่านแล้วจะทำข้อสอบได้เลย
-## Objectives Domain Review
+![](/assets/DP203/03-Objectives_domain_review.png)
+objective domains are the primary categories of subjects and ideas that the test covers 
 
 ![](/assets/DP203/04-Objectives_domain_breakdown.png)
-DP-203 objective domain แบ่งเป็น 3 หัวข้อหลักๆ ดังนี้
-- design and implement data storage 
-- develop data processing secure monitoring
-- optimized data storage and data processing 
+let's look into the DP 203 objective domain together this exam has three functional groups design and implement data storage develop data processing secure monitoring and optimized data storage and data processing you will see the relative weighting of each group meaning what percentage of the questions will be on which functional groups you may note that functional group 2 develop data processing has the highest weight in the DP 203 exam also note that while certain groups may have a higher weighting you will still need to be familiar with all of them 
 
-ซึ่งจะมีน้ำหนักการออกข้อสอบ แต่ต่างกันไป เป็นไกด์ให้ว่าควรเน้นเนื้อหาส่วนไหนมากน้อยกว่ากัน
-
-## Design and implement data storage (15–20%)
 ![](/assets/DP203/05-Skills_Measured1.png)
-first functional group or skills measured our first functional group is about 
-- how to design and implement data storage 
-  - how to implement a partition strategy and design 
-  - how to implement the data exploration layer 
+let's get started with the first functional group or skills measured our first functional group is about how to design and implement data storage within this group we will learn how to implement a partition strategy and design and implement the data exploration layer 
 
 ![](/assets/DP203/06-Implement_a_partition_Strategy_for_files.png)
-
-let's begin with the first topic in this functional group every workload has different requirements on how the data is consumed but these are some common layouts to consider when working with Internet of Things or IOT batch scenarios or when optimizing for time series data in io T workloads there could be a great deal of data ingested that spans across numerous products devices organizations and customers it's important to pre plan the directory layout for organization security and efficient processing of the data for downstream consumers a general template you may consider might be one that uses region as one level of directory within that you might have subject matters as subdirectories then you may have sub directories for each year and a four digit year format then within each of those a 2 digit month format for each month and then a two digit day format for each day and possibly even a 2 digit hour format and then you would place the data coming in into the appropriate directory for batch processing job structures there are a lot of similarities a commonly used approach in batch processing is to place data into an in directory so in such a case you would keep your region and subject matters but then you may have an in directory and then from there you may have the four digit year 2 digit month 2 digit day and two digit hour subdirectories for your out data you may also go regions subject matters and then out and then the formats in the same formats that you've used before and you will always need to deal with some corrupt or bad data so in a case like this we may also go region and subject matters but then have a third subdirectory for bad and then the date format after that for time series data partition pruning can help some queries read only a subset of the data which can improve performance so a common example we see for data that is structured by date may be a data set by name add data 4 digit year 2 digit month to digit day and then your files within that particular subdirectory consider using data flows and Azure data factory or using synapse pipelines to partition data when writing files to Azure data lake storage Gen. 2 or to Azure BLOB storage 
+let's begin with the first topic in this functional group every workload has different requirements on how the data is consumed but these are some common layouts to consider when working with Internet of Things or IO T batch scenarios or when optimizing for time series data in io T workloads there could be a great deal of data ingested that spans across numerous products devices organizations and customers it's important to pre plan the directory layout for organization security and efficient processing of the data for downstream consumers a general template you may consider might be one that uses region as one level of directory within that you might have subject matters as subdirectories then you may have sub directories for each year and a four digit year format then within each of those a 2 digit month format for each month and then a two digit day format for each day and possibly even a 2 digit hour format and then you would place the data coming in into the appropriate directory for batch processing job structures there are a lot of similarities a commonly used approach in batch processing is to place data into an in directory so in such a case you would keep your region and subject matters but then you may have an in directory and then from there you may have the four digit year 2 digit month 2 digit day and two digit hour subdirectories for your out data you may also go regions subject matters and then out and then the formats in the same formats that you've used before and you will always need to deal with some corrupt or bad data so in a case like this we may also go region and subject matters but then have a third subdirectory for bad and then the date format after that for time series data partition pruning can help some queries read only a subset of the data which can improve performance so a common example we see for data that is structured by date may be a data set by name add data 4 digit year 2 digit month to digit day and then your files within that particular subdirectory consider using data flows and Azure data factory or using synapse pipelines to partition data when writing files to Azure data lake storage Gen. 2 or to Azure BLOB storage 
 
 ![](/assets/DP203/07-Implement_a_partition_Strategy_for_streaming_workload.png)
 next let's examine how to implement a partition strategy for analytical workloads event hubs use partitions that help to segment data and allow you to read each partition in parallel event hubs stream data at a massive scale partitioning is built into event hubs to enable horizontal scaling you can only read a specific partition of the message stream at a time the event publishers are only aware of the partition key not the actual partition to which the events are being published the decoupling of key and partition prevents the sender from knowing the downstream processing 
