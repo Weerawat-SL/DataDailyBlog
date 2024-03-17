@@ -43,6 +43,13 @@ tags: Certificate_Exam #[tag1, tag2, tag3]
         - [How Azure Synapse Analytics works](#how-azure-synapse-analytics-works)
         - [When to use Azure Synapse Analytics](#when-to-use-azure-synapse-analytics)
         - [Exercise - Explore Azure Synapse Analytics](#exercise---explore-azure-synapse-analytics)
+      - [Survey the Components of Azure Synapse Analytics](#survey-the-components-of-azure-synapse-analytics)
+        - [Introduction](#introduction-2)
+        - [Create Azure Synapse Analytics workspace](#create-azure-synapse-analytics-workspace)
+        - [Exercise - Create and manage Azure Synapse Analytics workspace](#exercise---create-and-manage-azure-synapse-analytics-workspace)
+        - [Describe Azure Synapse Analytics SQL](#describe-azure-synapse-analytics-sql)
+        - [Explain Apache Spark in Azure Synapse Analytics](#explain-apache-spark-in-azure-synapse-analytics)
+        - [Exercise - Create pools in Azure Synapse Analytics](#exercise---create-pools-in-azure-synapse-analytics)
 
 ---
 
@@ -626,3 +633,144 @@ defines four common types of analytical technique
 ##### Exercise - Explore Azure Synapse Analytics
 [Exercise-Link](https://learn.microsoft.com/en-us/training/modules/introduction-azure-synapse-analytics/4a-exercise-explore-synapse)
 
+#### Survey the Components of Azure Synapse Analytics
+##### Introduction
+In this lesson, you will:
+- Create Azure Synapse Analytics Workspace
+- Describe Azure Synapse SQL
+- Explain Apache Spark in Azure Synapse Analytics
+- Orchestrate Data Integration with Azure Synapse Pipelines
+- Visualize your analytics with Power BI
+- Understand Hybrid Transactional Analytical Processing with Azure Synapse Link
+
+##### Create Azure Synapse Analytics workspace
+เมื่อ Create workspace ของ Azure Synapse Analytics จะประกอบไปด้วย
+- Azure Data Lake Storage Gen2 ทำหน้าที่เป็นที่เก็บข้อมูลหลักและคอนเทนเนอร์
+- Apache Spark พื้นที่ทำงานจัดเก็บข้อมูลในตาราง และจัดเก็บบันทึกแอปพลิเคชัน Spark ไว้ใต้โฟลเดอร์ชื่อ /synapse/workspacename
+- สร้าง pools ข้อมูล, SQL pools, หรือ Spark pools ตามต้องการได้
+- ระบบเมตาดาต้าที่เข้ากันได้กับ Hive ทำให้ Spark เข้าถึงข้อมูลใน Data Lake ได้ (Parquet, CSV, TSV และ JSON )
+
+![](https://learn.microsoft.com/en-us/training/wwl-data-ai/survey-components-of-azure-synapse-analytics/media/azure-synapse-workspace.png)
+
+##### Exercise - Create and manage Azure Synapse Analytics workspace
+To create an Azure Synapse Analytics workspace, perform the following steps:
+
+1. In the Azure portal, click on + **Create a resource**.
+2. In the text box, replace “Search the Marketplace” with the text “Azure Synapse” and then click on Azure Synapse Analytics.
+3. Click on **Create**.
+![](https://learn.microsoft.com/en-us/training/wwl-data-ai/survey-components-of-azure-synapse-analytics/media/create-azure-synapse-workspace.png)
+
+4. In **Basics**, enter your preferred Subscription, Resource group, Region, and then type in a workspace name.
+![](https://learn.microsoft.com/en-us/training/wwl-data-ai/survey-components-of-azure-synapse-analytics/media/create-azure-synapse-workspace-basics-screen.png)
+5. You need to select a Data Lake Storage Gen2 account and a container in that account to create a workspace. The simplest choice it to create a new one. By clicking on the **Create new** hyperlink, but there is the option to use an existing one by click on the drop-down list.
+6. Select **Review + create > Create**. Your workspace is ready in a few minutes.
+
+##### Describe Azure Synapse Analytics SQL
+- data warehouse solutions, or to perform data virtualization
+- data stored in relational tables
+- The data is retrieved, cleansed, and transformed from a range of source data system
+- served in a structured relational format commonly referred to as a star schema.
+![](https://learn.microsoft.com/en-us/training/wwl-data-ai/survey-components-of-azure-synapse-analytics/media/relational-star-schema.png)
+- ETL process by services such as Azure Synapse pipelines, or Azure Data Factory
+- **dedicated SQL Pools** refers to the **data warehousing** features
+- **serverless SQL** model is ideal for unplanned or **ad hoc** workloads that the **diagnostic** analytics
+
+##### Explain Apache Spark in Azure Synapse Analytics
+- The primary use case for Apache Spark for Azure Synapse Analytics is to process big data workloads that cannot be handled by Azure Synapse SQL
+-  Azure Synapse Analytics can also integrate with other Spark implementations such as Azure Databricks
+-  Spark pools in Azure Synapse Analytics come with Anaconda libraries pre-installed.
+- processes large amounts of data in memory (ประมวลผลข้อมูลจำนวนมากในหน่วยความจำ)
+- in Azure Synapse Analytics have name "Spark pools"
+- ทำงานบน Spark pool clusters และรับงานจาก notebooks
+- clusters allow processing of data to be parallelized
+- consists of a Spark Driver and Worker nodes
+  - Driver node sends work to the Worker nodes
+  - you can configure the number of nodes are required in task
+
+![](https://learn.microsoft.com/en-us/training/wwl-data-ai/survey-components-of-azure-synapse-analytics/media/apache-spark-architecture.png)
+
+- **Speed and efficiency** (ความเร็วและประสิทธิภาพ)
+  - Create in 2 minutes for < 60 nodes | 5 minutes for > 60 nodes
+  - shuts down in 5 minutes(default) after the last job executed เว้นจะยังเชื่อมต่อกับ notebook connection อยู่.
+- **Ease of creation**(ความง่ายในการสร้าง)
+  - Create with Azure portal, Azure PowerShell, or the Synapse Analytics .NET SDK.
+- **Ease of use**(สะดวกในการใช้)
+  - ทำงานบน interactive notebooks ทำให้ data processing และ visualization พร้อมๆกันได้.
+- **Scalability**
+  - can have Auto-Scale enabled
+  - shut down with no loss of data since all the data is stored in Azure Storage or Data Lake Storage.
+- **Support for Azure Data Lake Storage Generation 2**
+
+##### Exercise - Create pools in Azure Synapse Analytics
+To create an Azure Synapse Analytics pool, perform the following steps:
+- **For Azure Synapse SQL pool**
+1. Launch Azure Synapse Studio. The URL can be found in the Azure Synapse Workspace created in the Azure portal.
+
+2. In Azure Synapse Studio, navigate to the Management Hub in the left navigation by selecting the Manage icon.
+
+![](https://learn.microsoft.com/en-us/training/wwl-data-ai/survey-components-of-azure-synapse-analytics/media/azure-synapse-studio-management-hub.png)
+
+3. Once in the Management Hub, navigate to the SQL pools section to see the current list of SQL pools that are available in the workspace.
+
+4. Select + New command and the new SQL pool create wizard will appear.
+
+![](https://learn.microsoft.com/en-us/training/wwl-data-ai/survey-components-of-azure-synapse-analytics/media/create-sql-pool-basics-screen.png)
+
+5. Enter the following details in the Basics tab:
+   - SQL pool name: SQLPool01
+   - Performance level: DW100c
+6. In the next tab, Additional settings, select none to provision the SQL pool without data. Leave the default collation as selected.
+![](https://learn.microsoft.com/en-us/training/wwl-data-ai/survey-components-of-azure-synapse-analytics/media/create-sql-pool-additional-settings-screen.png)
+
+7. We won't add any tags for now, so next select Review + create.
+
+8. In the Review + create tab, make sure that the details look correct based on what was previously entered, and press create
+![](https://learn.microsoft.com/en-us/training/wwl-data-ai/survey-components-of-azure-synapse-analytics/media/create-sql-pool-review-screen.png)
+At this point, the resource provisioning flow will start. After the provisioning completes, navigating back to the workspace will show a new entry for the newly created SQL pool.
+
+9. Once the SQL pool is created, it will be available in the workspace for loading data, processing streams, reading from the lake, etc.
+
+![](https://learn.microsoft.com/en-us/training/wwl-data-ai/survey-components-of-azure-synapse-analytics/media/sql-pool-screen.png)
+
+- **Azure Synapse Spark pool**
+1. Launch Azure Synapse Studio. The URL can be found in the Azure Synapse Workspace created in the Azure portal.
+
+2. In Azure Synapse Studio, navigate to the Management Hub in the left navigation by selecting the Manage icon.
+
+3. Once in the Management Hub, navigate to the Apache Spark pools section to see the current list of Apache Spark pools that are available in the workspace.
+![](https://learn.microsoft.com/en-us/training/wwl-data-ai/survey-components-of-azure-synapse-analytics/media/spark-pool-screen.png)
+
+4. Select + New and the new Apache Spark pool create wizard will appear.
+
+5. Enter the following details in the Basics tab:
+   - Apache Spark Pool name: Sparkpool01
+   - Node size: Small (4 vCPU / 32 GB)
+   - Autoscale: Disabled
+   - Number of Nodes: 8
+
+![](https://learn.microsoft.com/en-us/training/wwl-data-ai/survey-components-of-azure-synapse-analytics/media/create-spark-pool-basics-screen.png)
+
+6. In the next tab (Additional settings), leave all settings as defaults.
+
+7. We won't add any tags for now, so select Review + create.
+
+8. In the Review + create tab, make sure that the details look correct based on what was previously entered, and press Create.
+
+![](https://learn.microsoft.com/en-us/training/wwl-data-ai/survey-components-of-azure-synapse-analytics/media/create-spark-pool-review-screen.png)
+
+9. The Apache Spark pool will start the provisioning process.Once the provisioning is complete, the new Apache Spark pool will appear in the list.
+
+![](https://learn.microsoft.com/en-us/training/wwl-data-ai/survey-components-of-azure-synapse-analytics/media/spark-pool-screen-with-pool.png)
+
+- **Delete a pool.**
+1. Navigate to the pools in the Management Hub in Synapse Studio. In this case Apache Spark
+
+2. Select the ellipsis next to the Apache pool to be deleted (in this case, Sparkpool01) to show the commands for the Apache Spark pool.
+
+![](https://learn.microsoft.com/en-us/training/wwl-data-ai/survey-components-of-azure-synapse-analytics/media/delete-pool.png)
+
+3. Press delete.
+
+4. Confirm the deletion, and press Delete button.
+
+5. When the process completes successfully, the Apache Spark pool will no longer be listed in the workspace resources.
