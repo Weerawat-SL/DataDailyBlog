@@ -50,6 +50,7 @@ tags: Certificate_Exam #[tag1, tag2, tag3]
         - [Describe Azure Synapse Analytics SQL](#describe-azure-synapse-analytics-sql)
         - [Explain Apache Spark in Azure Synapse Analytics](#explain-apache-spark-in-azure-synapse-analytics)
         - [Exercise - Create pools in Azure Synapse Analytics](#exercise---create-pools-in-azure-synapse-analytics)
+        - [Orchestrate data integration with Azure Synapse pipelines](#orchestrate-data-integration-with-azure-synapse-pipelines)
 
 ---
 
@@ -774,3 +775,20 @@ At this point, the resource provisioning flow will start. After the provisioning
 4. Confirm the deletion, and press Delete button.
 
 5. When the process completes successfully, the Apache Spark pool will no longer be listed in the workspace resources.
+
+##### Orchestrate data integration with Azure Synapse pipelines
+- Service available: Azure HDInsight, Azure Databricks และ Azure Synapse Analytics
+- Most of the features come from Azure Data Factory
+- enables you to integrate data pipelines between SQL Pools, Spark Pools and SQL Serverless
+
+![alt text](image.png)
+
+![alt text](image-1.png)
+- Linked Service สร้าง Connecttion กับ Service ภายนอก
+- Datasets ครอบ Linked Service เพื่อให้ References ถึง Data ได้
+- Activities การกระทำกับ data เช่น get copy move 
+- trigger ตัวสั่งการให้เริ่มการกระทำนั้นๆ
+- Pipelines = Activities + Datasets
+- Parameters ใช้เซ็ตค่าต่างๆ ที่ใช้ร่วมกัน ใน Pipelines เพื่อความยืดหยุ่นในการทำงาน
+- ณntegration runtime เตรียม การประมวลผลฝั่ง infra ด้วย ADF
+- Control flow
