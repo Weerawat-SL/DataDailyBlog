@@ -51,6 +51,8 @@ tags: Certificate_Exam #[tag1, tag2, tag3]
         - [Explain Apache Spark in Azure Synapse Analytics](#explain-apache-spark-in-azure-synapse-analytics)
         - [Exercise - Create pools in Azure Synapse Analytics](#exercise---create-pools-in-azure-synapse-analytics)
         - [Orchestrate data integration with Azure Synapse pipelines](#orchestrate-data-integration-with-azure-synapse-pipelines)
+        - [Exercise-Identifying Azure Synapse pipeline components](#exercise-identifying-azure-synapse-pipeline-components)
+        - [Visualize your analytics with Power BI](#visualize-your-analytics-with-power-bi)
 
 ---
 
@@ -781,14 +783,49 @@ At this point, the resource provisioning flow will start. After the provisioning
 - Most of the features come from Azure Data Factory
 - enables you to integrate data pipelines between SQL Pools, Spark Pools and SQL Serverless
 
-![alt text](image.png)
+![alt text](/assets/DP203/Data_factory_components.png)
 
-![alt text](image-1.png)
+![alt text](/assets/DP203/Data_factory_components2.png)
 - Linked Service สร้าง Connecttion กับ Service ภายนอก
 - Datasets ครอบ Linked Service เพื่อให้ References ถึง Data ได้
 - Activities การกระทำกับ data เช่น get copy move 
 - trigger ตัวสั่งการให้เริ่มการกระทำนั้นๆ
 - Pipelines = Activities + Datasets
-- Parameters ใช้เซ็ตค่าต่างๆ ที่ใช้ร่วมกัน ใน Pipelines เพื่อความยืดหยุ่นในการทำงาน
+- Parameters ภูกกันหดให้อ่านอย่างเดียว หลัวการ Setใช้เซ็ตค่าต่างๆ ที่ใช้ร่วมกัน ใน Pipelines เพื่อความยืดหยุ่นในการทำงาน
 - ณntegration runtime เตรียม การประมวลผลฝั่ง infra ด้วย ADF
-- Control flow
+- Control flow use authorizing azure data factory ใช้เรรียบเรียง กิจกรรม ใน Pipeline
+![](https://learn.microsoft.com/en-us/training/wwl-data-ai/survey-components-of-azure-synapse-analytics/media/data-factory-components.png)
+
+##### Exercise-Identifying Azure Synapse pipeline components
+1. Launch Azure Synapse Studio. The URL can be found in the Azure Synapse Workspace created in the Azure portal.
+
+2. In Azure Synapse Studio, navigate to the Integrate Hub in the left navigation by selecting the Integrate icon.
+![](https://learn.microsoft.com/en-us/training/wwl-data-ai/survey-components-of-azure-synapse-analytics/media/azure-synapse-studio-integrate-hub.png)
+
+3. Expand Pipelines and select 1 Master Pipeline (1). Point out the Activities (2) that can be added to the pipeline, and show the pipeline canvas (3) on the right.
+
+![](https://learn.microsoft.com/en-us/training/wwl-data-ai/survey-components-of-azure-synapse-analytics/media/pipelines-screen.png)
+
+4. Our Synapse workspace contains 16 pipelines that enable us to orchestrate data movement and transformation steps over data from several sources.
+
+5. The Activities list contains many activities that you can drag and drop onto the pipeline canvas on the right.
+
+6. Here we see that we have three execute (child) pipelines:
+
+![](https://learn.microsoft.com/en-us/training/wwl-data-ai/survey-components-of-azure-synapse-analytics/media/view-pipeline.png)
+
+7. Select the Execute Customize All Pipeline activity (1). Select the Settings (2) tab. Show that the invoked pipeline is Customize All (3), then select Open (4).
+
+![](https://learn.microsoft.com/en-us/training/wwl-data-ai/survey-components-of-azure-synapse-analytics/media/edit-settings.png)
+
+8. As you can see, there are five child pipelines. This first execute pipeline activity cleans and ingests new Manufacturer campaign data for the Campaign Analytics report.
+
+9. Select the Campaign Analytics activity (1), select the Settings tab (2), observe the invoked pipeline is set to Customize All (3), then select Open (4).
+
+![](https://learn.microsoft.com/en-us/training/wwl-data-ai/survey-components-of-azure-synapse-analytics/media/edit-pipeline-settings.png)
+
+10. Observe how cleaning and ingesting happens in the pipeline by clicking on each activity.
+
+![](https://learn.microsoft.com/en-us/training/wwl-data-ai/survey-components-of-azure-synapse-analytics/media/parent-pipelines.png)
+
+##### Visualize your analytics with Power BI
