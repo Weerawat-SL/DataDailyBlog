@@ -10,4 +10,23 @@ Path:_data/projects.yml
 Path:_data/interests.yml
 Path:_data/links.yml
 
+## jekyll install
+https://jekyllrb.com/docs/
+~~~bash
+jekyll build
+jekyll serve
+~~~
 
+- Database/Mysql/PostgreSQL
+- Docker
+- Kafka
+- Airflow
+- Dagster
+- DBT
+- CIDI/Jenkins
+- AWS
+- GCP
+- Azure
+- Teraform
+- Git
+- jekyll

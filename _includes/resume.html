@@ -86,11 +86,11 @@
   <!-- Summary -->
   <div class="executive-summary" itemprop="description"><p>{{ resume.header.intro }}</p></div>
   <!-- Contact me button -->
-  {%- if resume.contact.email -%}
+  <!-- {%- if resume.contact.email -%}
     <div>
       <a href="mailto:{{ resume.contact.email }}" class="contact-button no-print" itemprop="email">Contact me</a>
     </div>
-  {%- endif -%}
+  {%- endif -%} -->
 </header>
 
 {%- if resume.sections.skills -%}
@@ -196,10 +196,11 @@
     <header class="section-header"><h2>Recognition</h2></header>
     <div class="section-content">
     {%- for recognition in site.data.recognitions -%}
-      <div class="resume-item">
-        <h3 class="resume-item-title" itemprop="award">{{ recognition.award }}</h3>
+      <div class="resume-item" itemscope itemprop="alumniOf">
+        <img src="{{ recognition.summary }}" class="recognition-summary">
+        <h3 class="resume-item-title recognitions-name" itemprop="award"><a href="{{ recognition.url }}">{{ recognition.award }}</a></h3>
         <h4 class="resume-item-details">{{ recognition.organization }} &bull; {{ recognition.year }}</h4>
-        <div class="resume-item-copy">{{ recognition.summary }}</div>
+        <!-- <div class="resume-item-copy">{{ recognition.summary }}</div> -->
       </div>
     {%- endfor -%}
     </div>

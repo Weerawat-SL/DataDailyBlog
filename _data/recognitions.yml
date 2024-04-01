@@ -1,4 +1,11 @@
 - award: "DP-900 : Azure Data Fundamentals"
   organization: Microsoft
   year: "Certified 2024"
-  summary: > 
+  summary: "https://learn.microsoft.com/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg?branch=main"
+  url : "https://learn.microsoft.com/api/credentials/share/en-us/WeerawatSaelao-7565/F2902C81E40E3010?sharingId=6FEAB2A6B5084551"
+
+- award: "Databricks Lakehouse Fundamentals"
+  organization: Databricks Academy Accreditation
+  year: "Certified 2024"
+  summary: "https://templates.images.credential.net/16509948849242752807044385742422.png"
+  url : "https://credentials.databricks.com/87632773-fa28-41a5-9ebc-62ca48cf0f9b#gs.6p5iaw"
