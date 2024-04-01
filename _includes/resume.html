@@ -196,11 +196,12 @@
     <header class="section-header"><h2>Recognition</h2></header>
     <div class="section-content">
     {%- for recognition in site.data.recognitions -%}
-      <div class="resume-item" itemscope itemprop="alumniOf">
+      <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
         <img src="{{ recognition.summary }}" class="recognition-summary">
-        <h3 class="resume-item-title recognitions-name" itemprop="award"><a href="{{ recognition.url }}">{{ recognition.award }}</a></h3>
+        <h3 class="resume-item-title recognitions-name" itemprop="award">
+          {%- if recognition.url -%}<a href="{{ recognition.url }}"itemprop="url" target="_blank">{{ recognition.award }}</a>{%- else -%}{{ recognition.award }}{%- endif -%}
+        </h3>
         <h4 class="resume-item-details">{{ recognition.organization }} &bull; {{ recognition.year }}</h4>
-        <!-- <div class="resume-item-copy">{{ recognition.summary }}</div> -->
       </div>
     {%- endfor -%}
     </div>
