@@ -10,7 +10,8 @@ tags: Certificate_Exam #[tag1, tag2, tag3]
 ![alt text](/assets/AzureCerFlowDP203.png)
 
 ---
-
+[Course DP-203T00--A: Data Engineering on Microsoft Azure](https://learn.microsoft.com/en-us/training/courses/dp-203t00)
+[CHALLENGE COLLECTION: Azure Synapse Analytics](https://learn.microsoft.com/en-us/collections/gm3rbm8g0r7e?WT.mc_id=cloudskillschallenge_3d6cb3b9-f4b7-4d7b-ab23-57faa1762705)
 **Table of Contents**
 - [**Microsoft Official Exam Prep**](#microsoft-official-exam-prep)
   - [Introduction](#introduction)
