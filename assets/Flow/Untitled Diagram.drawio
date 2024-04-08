@@ -1,16 +1,19 @@
-<mxfile host="app.diagrams.net" modified="2024-04-03T13:26:23.628Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="IgU2JiNXyDPn3PjRcB3S" version="24.2.1" type="device">
-  <diagram name="Page-1" id="A17d1SWubWG_rxCs71pj">
-    <mxGraphModel dx="2990" dy="1476" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="K3TYc1gE-kaJ9yGKOkkF-1" value="" style="shape=image;verticalLabelPosition=bottom;verticalAlign=top;imageAspect=0;aspect=fixed;image=https://apache.org/logos/res/kafka/kafka.png;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
-          <mxGeometry x="-320" y="150" width="1200" height="600" as="geometry" />
-        </mxCell>
-        <mxCell id="K3TYc1gE-kaJ9yGKOkkF-2" value="" style="shape=image;verticalLabelPosition=bottom;verticalAlign=top;imageAspect=0;aspect=fixed;image=https://apache.org/logos/res/spark/spark.png;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
-          <mxGeometry x="-290" y="660" width="1200" height="624" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
+<mxfile host="65bd71144e">
+    <diagram name="Page-1" id="A17d1SWubWG_rxCs71pj">
+        <mxGraphModel dx="4057" dy="2507" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="K3TYc1gE-kaJ9yGKOkkF-1" value="" style="shape=image;verticalLabelPosition=bottom;verticalAlign=top;imageAspect=0;aspect=fixed;image=https://apache.org/logos/res/kafka/kafka.png;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" parent="1" vertex="1">
+                    <mxGeometry x="-320" y="150" width="1200" height="600" as="geometry"/>
+                </mxCell>
+                <mxCell id="K3TYc1gE-kaJ9yGKOkkF-2" value="" style="shape=image;verticalLabelPosition=bottom;verticalAlign=top;imageAspect=0;aspect=fixed;image=https://apache.org/logos/res/spark/spark.png;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" parent="1" vertex="1">
+                    <mxGeometry x="-290" y="660" width="1200" height="624" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="&lt;head&gt;&lt;noscript&gt;&lt;META http-equiv=&quot;refresh&quot; content=&quot;0;URL=https://app.diagrams.net/?libs=0&amp;amp;clibs=Uhttps%3A%2F%2Fraw.githubusercontent.com%2FCir02%2FApache-logos-drawio%2Fmain%2Flib%2Fapache_software_foundation_logos.xml&quot;&gt;&lt;/noscript&gt;&lt;title&gt;https://app.diagrams.net/?libs=0&amp;amp;clibs=Uhttps%3A%2F%2Fraw.githubusercontent.com%2FCir02%2FApache-logos-drawio%2Fmain%2Flib%2Fapache_software_foundation_logos.xml&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;a href=&quot;https://app.diagrams.net/?libs=0&amp;amp;clibs=Uhttps%3A%2F%2Fraw.githubusercontent.com%2FCir02%2FApache-logos-drawio%2Fmain%2Flib%2Fapache_software_foundation_logos.xml&quot;&gt;&lt;/a&gt;&lt;script&gt;window.opener = null; document.getElementsByTagName(&quot;a&quot;)[0].click();&lt;/script&gt;&lt;/body&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry width="30" height="20" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
 </mxfile>

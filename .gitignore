@@ -4,3 +4,6 @@ Gemfile.lock
 _site/
 
 _posts/2024-03-03-Azure-DP-900-practice-test.md
+
+*.ini
+_posts/_draft
