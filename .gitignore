@@ -3,7 +3,7 @@ Gemfile.lock
 .jekyll-cache
 _site/
 
-_posts/2024-03-03-Azure-DP-900-practice-test.md
+# _posts/2024-03-03-Azure-DP-900-practice-test.md
 
 *.ini
-_posts/_draft
+# _posts/_draft

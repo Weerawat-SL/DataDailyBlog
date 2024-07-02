@@ -21,6 +21,7 @@ jekyll serve
 - Docker
 - Kafka
 - Airflow
+- Kestra
 - Dagster
 - DBT
 - CIDI/Jenkins
