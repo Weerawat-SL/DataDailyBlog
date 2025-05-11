@@ -1,0 +1,206 @@
+/* Dark Mode Styles */
+:root {
+  --background-color: #ffffff;
+  --text-color: #111111;
+  --link-color: #2a7ae2;
+  --link-visited-color: #1756a9;
+  --border-color: #e8e8e8;
+  --code-background: #eef;
+  --blockquote-color: #828282;
+  --table-header-background: #f0f0f0;
+  --table-border: #e8e8e8;
+  --table-even-row: #f7f7f7;
+  --header-border: #e8e8e8;
+  --footer-background: #f8f8f8;
+  --footer-text: #828282;
+  --post-meta-color: #828282;
+  --archive-tab-background: #f8f8f8;
+  --archive-tab-active: #ffffff;
+  --archive-tab-text: #111111;
+  --archive-tab-active-text: #111111;
+  --search-highlight: #ffeb3b;
+  --nav-text-color: #111111;
+}
+
+body.dark-mode {
+  --background-color: #121212;
+  --text-color: #e0e0e0;
+  --link-color: #64b5f6;
+  --link-visited-color: #90caf9;
+  --border-color: #333333;
+  --code-background: #2d2d2d;
+  --blockquote-color: #aaaaaa;
+  --table-header-background: #333333;
+  --table-border: #444444;
+  --table-even-row: #222222;
+  --header-border: #333333;
+  --footer-background: #1a1a1a;
+  --footer-text: #aaaaaa;
+  --post-meta-color: #aaaaaa;
+  --archive-tab-background: #2d2d2d;
+  --archive-tab-active: #121212;
+  --archive-tab-text: #e0e0e0;
+  --archive-tab-active-text: #ffffff;
+  --search-highlight: #ffd600;
+  --nav-text-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  color: var(--link-color);
+  transition: color 0.3s ease;
+}
+
+a:visited {
+  color: var(--link-visited-color);
+}
+
+/* Navigation menu text color */
+.site-nav .page-link {
+  color: var(--nav-text-color) !important;
+  transition: color 0.3s ease;
+}
+
+.site-title, .site-title:visited {
+  color: var(--nav-text-color) !important;
+  transition: color 0.3s ease;
+}
+
+/* Archive tabs styling */
+.archive-tab {
+  background-color: var(--archive-tab-background);
+  border: 1px solid var(--border-color);
+  color: var(--archive-tab-text);
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.archive-tab.active {
+  background-color: var(--archive-tab-active);
+  color: var(--archive-tab-active-text);
+  font-weight: bold;
+}
+
+.site-header {
+  border-top: 5px solid var(--text-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.site-footer {
+  border-top: 1px solid var(--border-color);
+  background-color: var(--footer-background);
+}
+
+.footer-col-wrapper {
+  color: var(--footer-text);
+}
+
+pre, code {
+  background-color: var(--code-background);
+  border: 1px solid var(--border-color);
+}
+
+blockquote {
+  color: var(--blockquote-color);
+  border-left: 4px solid var(--border-color);
+}
+
+table {
+  color: var(--text-color);
+  border: 1px solid var(--table-border);
+}
+
+table tr:nth-child(even) {
+  background-color: var(--table-even-row);
+}
+
+table th {
+  background-color: var(--table-header-background);
+  border: 1px solid var(--border-color);
+}
+
+table td {
+  border: 1px solid var(--table-border);
+}
+
+.post-meta {
+  color: var(--post-meta-color);
+}
+
+.post-date {
+  color: var(--post-meta-color);
+}
+
+.search-highlight {
+  background-color: var(--search-highlight);
+}
+
+/* Dark Mode Toggle Switch */
+.dark-mode-toggle {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.dark-mode-toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.dark-mode-toggle .slider {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 20px;
+  transition: .4s;
+  margin: 0 8px;
+}
+
+.dark-mode-toggle .slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: .4s;
+}
+
+.dark-mode-toggle input:checked + .slider {
+  background-color: #2196F3;
+}
+
+.dark-mode-toggle input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+.dark-mode-toggle .icon {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+  .dark-mode-toggle {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  
+  /* Fix for mobile menu in dark mode */
+  body.dark-mode .site-nav {
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+  }
+  
+  body.dark-mode .site-nav .menu-icon > svg {
+    fill: var(--nav-text-color);
+  }
+}

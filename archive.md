@@ -14,20 +14,23 @@ title: Blog Archive
 .archive-tab {
   padding: 10px 15px;
   cursor: pointer;
-  background-color: #f8f8f8;
-  border: 1px solid #e8e8e8;
+  background-color: var(--archive-tab-background, #f8f8f8);
+  color: var(--archive-tab-text, #111111);
+  border: 1px solid var(--border-color, #e8e8e8);
   border-bottom: none;
   margin-right: 5px;
   border-radius: 4px 4px 0 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .archive-tab:hover {
-  background-color: #f0f0f0;
+  background-color: var(--archive-tab-hover, #f0f0f0);
 }
 
 .archive-tab.active {
-  background-color: white;
-  border-bottom: 1px solid white;
+  background-color: var(--archive-tab-active, white);
+  color: var(--archive-tab-active-text, #111111);
+  border-bottom: 1px solid var(--archive-tab-active, white);
   margin-bottom: -1px;
   font-weight: bold;
 }

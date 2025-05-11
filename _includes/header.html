@@ -22,7 +22,14 @@
           <a class="page-link" href="{{ '/archive.html' | relative_url }}">Blog Archive</a>
           <a class="page-link" href="{{ '/bookmarks.html' | relative_url }}">Bookmarks</a>
           <a class="page-link" href="{{ '/About Me.html' | relative_url }}">About Me</a>
-          <!-- เพิ่มเมนูอื่นๆ ตามต้องการ -->
+          
+          <!-- Dark Mode Toggle -->
+          <label class="dark-mode-toggle">
+            <span class="icon">☀️</span>
+            <input type="checkbox" id="dark-mode-toggle" onchange="toggleDarkMode()">
+            <span class="slider"></span>
+            <span class="icon">🌙</span>
+          </label>
           
           <!-- หรือถ้าต้องการใช้เมนูอัตโนมัติจากไฟล์หน้าต่างๆ ให้ใช้โค้ดด้านล่างนี้แทน -->
           <!-- 
@@ -38,3 +45,16 @@
     {%- endif -%}
   </div>
 </header>
+
+<script>
+  function toggleDarkMode() {
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    const isDarkMode = darkModeToggle.checked;
+    
+    // Toggle dark mode class on body
+    document.body.classList.toggle('dark-mode', isDarkMode);
+    
+    // Save preference to localStorage
+    localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+  }
+</script>
