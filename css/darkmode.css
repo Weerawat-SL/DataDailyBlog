@@ -20,6 +20,8 @@
   --archive-tab-active-text: #111111;
   --search-highlight: #ffeb3b;
   --nav-text-color: #111111;
+  --about-link-color: #2a7ae2;
+  --about-link-hover-color: #111111;
 }
 
 body.dark-mode {
@@ -43,6 +45,8 @@ body.dark-mode {
   --archive-tab-active-text: #ffffff;
   --search-highlight: #ffd600;
   --nav-text-color: #ffffff;
+  --about-link-color: #ffffff;
+  --about-link-hover-color: #64b5f6;
 }
 
 body {
@@ -58,6 +62,44 @@ a {
 
 a:visited {
   color: var(--link-visited-color);
+}
+
+/* Special styling for links in About Me page */
+.page-content a {
+  color: var(--about-link-color);
+  transition: color 0.3s ease;
+}
+
+.page-content a:hover {
+  color: var(--about-link-hover-color);
+}
+
+/* Make sure resume links are properly styled in dark mode */
+body.dark-mode .page-content a {
+  color: var(--about-link-color);
+}
+
+body.dark-mode .page-content a:hover {
+  color: var(--about-link-hover-color);
+  text-decoration: underline;
+}
+
+/* Fix for specific links in recognitions section */
+body.dark-mode .resume-item-title.recognitions-name a {
+  color: var(--about-link-color) !important;
+}
+
+body.dark-mode .resume-item-title.recognitions-name a:hover {
+  color: var(--about-link-hover-color) !important;
+}
+
+/* Fix for all links in resume sections */
+body.dark-mode .section-content a {
+  color: var(--about-link-color) !important;
+}
+
+body.dark-mode .section-content a:hover {
+  color: var(--about-link-hover-color) !important;
 }
 
 /* Navigation menu text color */
@@ -77,6 +119,10 @@ a:visited {
   border: 1px solid var(--border-color);
   color: var(--archive-tab-text);
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.archive-tab:hover {
+  background-color: var(--archive-tab-hover, #f0f0f0);
 }
 
 .archive-tab.active {
