@@ -6,6 +6,6 @@ layout: home
 ---
 ![](assets/index/DE.jpg){: width="700" }
 
-Welcome to my little corner. I graduated in Environmental Engineering, so I lack knowledge in web development. However, I aspire to create this space to gather and organize knowledge and other topics for my personal review. There may be opportunities to share with teammates for further learning.
+Welcome to my personal space. I've created this platform to collect knowledge, experiences, and ideas both for personal review and to share with those interested. Here you'll find articles about data management, latest technologies, and lessons from real experiences that might help you avoid obstacles I've faced. Enjoy exploring!.
 <!-- https://weerawat-sl.github.io/weerawat.github.io/
 jekyll serve -->

@@ -223,6 +223,7 @@ ul, ol {
         .bottom-bar__content > * {
             display: flex;
             align-items: center;
+            color: white !important;
         }
 
         .bottom-bar__content {
@@ -232,12 +233,14 @@ ul, ol {
 
             .bottom-bar__text {
                 padding-right: 10px;
+                color: white !important;
             }
 
             .bottom-bar__close {
                 background: none;
                 border: none;
-                color: #ffffff;
+                // color: #ffffff !important;
+                color: white !important;
                 cursor: pointer;
                 font-size: 2rem;
             }

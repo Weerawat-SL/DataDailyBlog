@@ -5,14 +5,7 @@ header:
   display_contact_info: true
   current_title: Data Engineer
   intro: >
-    Self-motivated data engineer with a strong penchant for learning and adapting quickly. 
-    Committed to lifelong learning and seeking opportunities for continuous self-development. 
-    With six years of engineering design experience, proficient in analyzing, comparing, 
-    and optimizing solutions. Possesses two years of experience as a data engineer, 
-    adept at managing data relationships, designing pipelines, 
-    and preparing data in Oracle,Bigquery and other data warehouses for reporting using SSRS 
-    and Power BI with multi-dimensional data. Skilled in enhancing performance for large-scale 
-    data and implementing Airflow to connect APIs to cloud services.
+    Self-motivated data engineer with a passion for continuous learning and a proven ability to adapt in fast-paced environments. Committed to lifelong learning and self-improvement. leveraged six years of engineering design experience to develop strong analytical thinking and solution-oriented problem-solving skills. over two years of experience in data engineering, proficient in building ETL pipelines and managing data across Oracle, BigQuery, and other cloud-based data warehouses. Skilled in preparing multidimensional data for business reporting using SSRS and Power BI. experienced in optimizing performance for large-scale data workflows and implementing Apache Airflow to automate API integrations with cloud platforms.
 contact:
   #address: 123 Main St, Test, CA 91234
   #phone: (123) 456-7890
@@ -28,11 +21,11 @@ sections:
   links:        true
   social_links: false
 social:
-  # Website:    http://chadbaldwin.net
+  # Website:    
   GitHub:     https://github.com/Weerawat-SL
-  # Twitter:    https://twitter.com/chad_baldwin
-  #Dribbble:  https://dribbble.com/chadbaldwin
-  #FaceBook:  https://facebook.com/iamchadbaldwin
+  # Twitter:  
+  #Dribbble:  
+  #FaceBook:  
   LinkedIn:   https://linkedin.com/in/Weerawat-s
-  #Instagram: https://instagram.com/chad_baldwin
-  #Medium:    https://medium.com/@chad-baldwin
+  #Instagram: 
+  #Medium:    

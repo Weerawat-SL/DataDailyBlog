@@ -1,6 +1,6 @@
 title: "Data Daily"
-author: "Weerawat.se"
-description: "Embrace the data's journey, for within its depths lie the keys to innovation and transformation." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
+author: "Weerawat.sl"
+description: "Let’s explore data and technology together — learn, share, and grow from real experiences" # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
 
 # Email / Social media user names used by the minima theme:
 # All of these are optional and can be removed or commented out
@@ -41,5 +41,5 @@ defaults:
     values:
       tags: Other
 
-gravatar_hash: B324C797203CBC7D190F1B5ACB0446453E8592F1B0B2E67DC2ED70D4237F68D0
+gravatar_hash: 
 
