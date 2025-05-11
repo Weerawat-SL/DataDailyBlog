@@ -1,8 +1,26 @@
+- award: "DP-203 : Azure Data Engineer Associate"
+  organization: Microsoft
+  year: "Certified 2024"
+  summary: "https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-associate-badge.svg"
+  url : "https://learn.microsoft.com/en-us/users/weerawatsaelao-7565/credentials/fe2fd81c3e008e6c?ref=https%3A%2F%2Fwww.linkedin.com%2F"
+
 - award: "DP-900 : Azure Data Fundamentals"
   organization: Microsoft
   year: "Certified 2024"
   summary: "https://learn.microsoft.com/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg?branch=main"
   url : "https://learn.microsoft.com/api/credentials/share/en-us/WeerawatSaelao-7565/F2902C81E40E3010?sharingId=6FEAB2A6B5084551"
+
+- award: "Apache Airflow 2 Fundamentals"
+  organization: Astronomer
+  year: "Certified 2024"
+  summary: "https://images.credly.com/images/655a478d-ecde-4a92-afcd-3c7be176ccf3/image.png"
+  url : "https://www.credly.com/badges/b1e106ae-7262-4b22-bbcb-0a30f5a98aa9/linked_in_profile"
+
+- award: "DAG Authoring for Apache Airflow 2"
+  organization: Astronomer
+  year: "Certified 2024"
+  summary: "https://images.credly.com/images/ed8e9dd4-2125-4e0b-9db1-57cf67de09d9/image.png"
+  url : "https://www.credly.com/badges/219087b7-3e7a-43fc-826a-683762bec20c/linked_in_profile"
 
 - award: "Databricks Lakehouse Fundamentals"
   organization: Databricks Academy Accreditation

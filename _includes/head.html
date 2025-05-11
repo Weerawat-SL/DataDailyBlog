@@ -1,0 +1,40 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- seo -%}
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/css/override.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/css/resume.scss" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/css/darkmode.css" | relative_url }}">
+  {%- feed_meta -%}
+  {%- if jekyll.environment == 'production' and site.google_analytics -%}
+    {%- include google-analytics.html -%}
+  {%- endif -%}
+  
+  <script>
+    // Check for saved dark mode preference or respect OS preference
+    document.addEventListener('DOMContentLoaded', function() {
+      const darkModeToggle = document.getElementById('dark-mode-toggle');
+      
+      // Check if user has previously chosen a theme
+      const savedTheme = localStorage.getItem('theme');
+      
+      // If user has chosen a theme, use it
+      if (savedTheme) {
+        document.body.classList.toggle('dark-mode', savedTheme === 'dark');
+        if (darkModeToggle) {
+          darkModeToggle.checked = (savedTheme === 'dark');
+        }
+      } 
+      // Otherwise, respect OS preference
+      else {
+        const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.body.classList.toggle('dark-mode', prefersDarkMode);
+        if (darkModeToggle) {
+          darkModeToggle.checked = prefersDarkMode;
+        }
+      }
+    });
+  </script>
+</head>
