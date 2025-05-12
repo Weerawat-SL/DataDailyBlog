@@ -92,6 +92,58 @@ title: Blog Archive
   color: #666;
   font-style: italic;
 }
+
+/* Category and Tag Buttons Styles */
+.category-buttons,
+.tag-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.category-button,
+.tag-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  color: white;
+  background-color: #2196F3;
+}
+
+.category-button:hover,
+.tag-button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.category-button .count,
+.tag-button .count {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 2px 6px;
+  font-size: 12px;
+  margin-left: 8px;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* Dark Mode Styles for buttons */
+body.dark-mode .category-button,
+body.dark-mode .tag-button {
+  background-color: #555;
+  color: white;
+}
+
+body.dark-mode .category-button:hover,
+body.dark-mode .tag-button:hover {
+  background-color: #666;
+}
 </style>
 
 <div class="archive-tabs">
@@ -120,10 +172,23 @@ title: Blog Archive
 
 <div id="by-category" class="archive-content">
   <h2>Posts by Category</h2>
+  
+  <div class="category-buttons">
+    {% assign categories = site.categories | sort %}
+    {% if categories.size > 0 %}
+      {% for category in categories %}
+        <a href="#category-{{ category[0] | slugify }}" class="category-button">
+          {{ category[0] }}
+          <span class="count">{{ category[1].size }}</span>
+        </a>
+      {% endfor %}
+    {% endif %}
+  </div>
+  
   {% assign categories = site.categories | sort %}
   {% if categories.size > 0 %}
     {% for category in categories %}
-      <h3>{{ category[0] }}</h3>
+      <h3 id="category-{{ category[0] | slugify }}">{{ category[0] }}</h3>
       <ul>
         {% for post in category[1] %}
           <li>
@@ -149,9 +214,20 @@ categories: [Category1, Category2]
 
 <div id="by-tag" class="archive-content">
   <h2>Posts by Tag</h2>
+  
+  <div class="tag-buttons">
+    {% assign tags = site.tags | sort %}
+    {% for tag in tags %}
+      <a href="#tag-{{ tag[0] | slugify }}" class="tag-button">
+        {{ tag[0] }}
+        <span class="count">{{ tag[1].size }}</span>
+      </a>
+    {% endfor %}
+  </div>
+  
   {% assign tags = site.tags | sort %}
   {% for tag in tags %}
-    <h3>{{ tag[0] }}</h3>
+    <h3 id="tag-{{ tag[0] | slugify }}">{{ tag[0] }}</h3>
     <ul>
       {% for post in tag[1] %}
         <li>
