@@ -111,7 +111,7 @@ title: Blog Archive
   text-decoration: none;
   font-size: 14px;
   transition: all 0.3s ease;
-  color: white;
+  color: white !important;
   background-color: #2196F3;
 }
 
