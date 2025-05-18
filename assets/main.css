@@ -422,6 +422,8 @@ table td {
 }
 .post-content h2 {
   font-size: 32px;
+  margin-top: 20px;
+  border-bottom: 2px solid #c7c7c7;
 }
 @media screen and (max-width: 800px) {
   .post-content h2 {

@@ -9,7 +9,6 @@ tags: [Database,MySQL, SQL] #[tag1, tag2, tag3]
 # position: "DataEngineer"
 ---
 ![](https://zixzax.net/wp-content/uploads/2020/05/MySQL-%E0%B8%84%E0%B8%B7%E0%B8%AD%E0%B8%AD%E0%B8%B0%E0%B9%84%E0%B8%A3.png)
-# ลองเล่น SQL บน MySQL
 
 ## Table of Contents
 - [ทำไมต้องเรียนรู้ MySQL?](#ทำไมต้องเรียนรู้-mysql)

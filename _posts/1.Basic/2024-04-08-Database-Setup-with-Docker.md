@@ -6,7 +6,7 @@ categories: [Basic]
 tags: [Database, Docker, MySQL, PostgreSQL, draft-A]
 ---
 
-# ติดตั้งฐานข้อมูลแบบง่ายๆ ด้วย Docker สำหรับ Data Engineer มือใหม่
+# ติดตั้งฐานข้อมูลแบบง่ายๆ ด้วย Docker
 
 ## Table of Contents
 - [ปัญหาการติดตั้งฐานข้อมูลแบบดั้งเดิม](#ปัญหาการติดตั้งฐานข้อมูลแบบดั้งเดิม)
