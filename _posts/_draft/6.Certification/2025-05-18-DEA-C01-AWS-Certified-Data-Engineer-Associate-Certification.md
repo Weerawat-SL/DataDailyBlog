@@ -1,0 +1,158 @@
+---
+layout: post
+title: "เตรียมตัวสอบ AWS Certified Data Engineer - Associate (DEA-C01) ฉบับมือใหม่"
+author: "Weerawat"
+categories: [Certification]
+tags: [AWS, Certification, Data-Engineer, draft-A]
+---
+
+# เตรียมตัวสอบ AWS Certified Data Engineer - Associate (DEA-C01) ฉบับมือใหม่
+
+## Table of Contents
+- [เตรียมตัวสอบ AWS Certified Data Engineer - Associate (DEA-C01) ฉบับมือใหม่](#เตรียมตัวสอบ-aws-certified-data-engineer---associate-dea-c01-ฉบับมือใหม่)
+  - [Table of Contents](#table-of-contents)
+  - [ทำไมต้องสอบ AWS Data Engineer?](#ทำไมต้องสอบ-aws-data-engineer)
+  - [ความรู้ที่จะได้รับ](#ความรู้ที่จะได้รับ)
+  - [สิ่งที่ต้องเตรียมก่อนเริ่มเรียน](#สิ่งที่ต้องเตรียมก่อนเริ่มเรียน)
+  - [เนื้อหาหลักของการสอบ](#เนื้อหาหลักของการสอบ)
+    - [1. Data Ingestion and Transformation (35%)](#1-data-ingestion-and-transformation-35)
+    - [2. Data Store Management (30%)](#2-data-store-management-30)
+    - [3. Data Operations and Support (20%)](#3-data-operations-and-support-20)
+    - [4. Data Security and Governance (15%)](#4-data-security-and-governance-15)
+  - [วิธีการเตรียมตัวสอบ](#วิธีการเตรียมตัวสอบ)
+    - [ขั้นตอนที่ 1: ศึกษาเนื้อหาและทำความเข้าใจ](#ขั้นตอนที่-1-ศึกษาเนื้อหาและทำความเข้าใจ)
+    - [ขั้นตอนที่ 2: ฝึกปฏิบัติจริง](#ขั้นตอนที่-2-ฝึกปฏิบัติจริง)
+    - [ขั้นตอนที่ 3: ทำข้อสอบจำลอง](#ขั้นตอนที่-3-ทำข้อสอบจำลอง)
+  - [เทคนิคการทำข้อสอบ](#เทคนิคการทำข้อสอบ)
+  - [แหล่งเรียนรู้เพิ่มเติม](#แหล่งเรียนรู้เพิ่มเติม)
+
+## ทำไมต้องสอบ AWS Data Engineer?
+
+น้องๆ เคยเจอปัญหาแบบนี้มั้ย? เวลาไปสมัครงานด้าน Data Engineer แล้วเจอว่าบริษัทต้องการคนที่มีประสบการณ์ด้าน AWS แต่เราไม่รู้จะพิสูจน์ยังไงว่าเรามีความรู้จริง หรือเวลาทำงานแล้วไม่รู้ว่าควรเลือกใช้บริการไหนของ AWS ดี เพราะมีเยอะมาก!
+
+ปัญหาเหล่านี้แก้ได้ด้วยการสอบ AWS Certified Data Engineer - Associate (DEA-C01) ซึ่งเป็นใบรับรองใหม่ล่าสุดจาก AWS ที่ออกแบบมาเฉพาะสำหรับ Data Engineer โดยเฉพาะ ไม่ใช่แค่ใบรับรองทั่วไปที่เน้นแค่ความรู้พื้นฐาน
+
+พี่เคยเจอปัญหาตอนทำงานว่า ไม่รู้จะเลือกใช้ service ไหนดีระหว่าง Glue, EMR หรือ Athena เพราะดูเหมือนทำงานคล้ายๆ กัน หรือไม่รู้ว่าควรออกแบบ data pipeline ยังไงให้มีประสิทธิภาพและประหยัดค่าใช้จ่าย การเตรียมตัวสอบ DEA-C01 จะช่วยให้เราเข้าใจจุดแข็งจุดอ่อนของแต่ละบริการและเลือกใช้ได้อย่างเหมาะสม
+
+## ความรู้ที่จะได้รับ
+
+การเตรียมตัวสอบ DEA-C01 จะช่วยพัฒนาทักษะและความรู้ในด้านต่อไปนี้:
+
+- **การออกแบบ Data Architecture บน AWS** - เรียนรู้การออกแบบระบบที่รองรับข้อมูลขนาดใหญ่ได้อย่างมีประสิทธิภาพ
+- **การใช้งาน AWS Data Services** - เข้าใจการใช้งานบริการต่างๆ เช่น S3, Glue, Redshift, Kinesis, EMR
+- **การสร้าง Data Pipeline** - เรียนรู้การออกแบบ ETL/ELT pipeline ที่มีประสิทธิภาพและทนทานต่อความผิดพลาด
+- **การจัดการ Data Governance** - เข้าใจเรื่องความปลอดภัยของข้อมูล, การจัดการสิทธิ์, และการปฏิบัติตามข้อกำหนด
+- **การเพิ่มประสิทธิภาพและลดค่าใช้จ่าย** - เรียนรู้เทคนิคการปรับแต่งระบบให้ทำงานเร็วขึ้นและประหยัดค่าใช้จ่าย
+
+## สิ่งที่ต้องเตรียมก่อนเริ่มเรียน
+
+ก่อนที่จะเริ่มเตรียมตัวสอบ DEA-C01 น้องๆ ควรมีพื้นฐานดังนี้:
+
+1. **บัญชี AWS** - สมัครบัญชี AWS Free Tier เพื่อทดลองใช้บริการต่างๆ
+2. **ความรู้พื้นฐานด้าน Data Engineering** - เข้าใจหลักการของ ETL, Data Warehouse, Data Lake
+3. **ทักษะการเขียนโปรแกรมพื้นฐาน** - มีความรู้ด้าน Python, SQL
+4. **ความรู้พื้นฐานเกี่ยวกับ AWS** - ควรมีความรู้พื้นฐานเกี่ยวกับบริการหลักของ AWS เช่น EC2, S3, IAM
+
+ถ้ายังไม่มีความรู้พื้นฐานด้าน AWS พี่แนะนำให้เริ่มจากการสอบ AWS Certified Cloud Practitioner ก่อน เพื่อให้เข้าใจภาพรวมของ AWS
+
+## เนื้อหาหลักของการสอบ
+
+การสอบ DEA-C01 แบ่งเนื้อหาออกเป็น 4 โดเมนหลัก:
+
+### 1. Data Ingestion and Transformation (35%)
+- การออกแบบและสร้าง data pipeline
+- การใช้งาน AWS Glue, AWS Data Pipeline, AWS DMS
+- การจัดการข้อมูลแบบ batch และ real-time ด้วย Kinesis, MSK
+- การแปลงข้อมูลด้วย AWS Lambda, Glue ETL
+
+![Data Ingestion Architecture](/assets/images/aws-data-ingestion.png)
+
+### 2. Data Store Management (30%)
+- การเลือกใช้ data store ที่เหมาะสม (S3, DynamoDB, RDS, Redshift)
+- การออกแบบ schema และ partition
+- การจัดการ data lifecycle และ storage class
+- การสำรองและกู้คืนข้อมูล
+
+### 3. Data Operations and Support (20%)
+- การตรวจสอบและแก้ไขปัญหา data pipeline
+- การติดตามประสิทธิภาพและค่าใช้จ่าย
+- การใช้งาน AWS CloudWatch, AWS X-Ray
+- การทำ automation ด้วย AWS Step Functions
+
+### 4. Data Security and Governance (15%)
+- การรักษาความปลอดภัยของข้อมูล
+- การจัดการสิทธิ์การเข้าถึงด้วย IAM
+- การเข้ารหัสข้อมูลด้วย KMS
+- การปฏิบัติตามข้อกำหนดและมาตรฐาน
+
+## วิธีการเตรียมตัวสอบ
+
+พี่แนะนำวิธีการเตรียมตัวสอบแบบ step-by-step ดังนี้:
+
+### ขั้นตอนที่ 1: ศึกษาเนื้อหาและทำความเข้าใจ
+- อ่าน [AWS Exam Guide](https://d1.awsstatic.com/training-and-certification/docs-data-engineer-associate/AWS-Certified-Data-Engineer-Associate_Exam-Guide.pdf) ให้เข้าใจ
+- ลงทะเบียนเรียนคอร์สเตรียมสอบจาก AWS Training หรือผู้ให้บริการอื่นๆ เช่น A Cloud Guru, Udemy
+- อ่านเอกสาร AWS ที่เกี่ยวข้องกับบริการด้านข้อมูล
+
+### ขั้นตอนที่ 2: ฝึกปฏิบัติจริง
+- สร้าง data pipeline ง่ายๆ บน AWS
+- ทดลองใช้งานบริการต่างๆ เช่น Glue, Athena, Redshift
+- ทำ workshop จาก [AWS Workshop Studio](https://workshop.aws/)
+
+```python
+# ตัวอย่างโค้ด Python สำหรับการใช้งาน AWS Glue
+import boto3
+
+# สร้าง Glue client
+glue_client = boto3.client('glue')
+
+# สร้าง Glue Job
+response = glue_client.create_job(
+    Name='my-etl-job',
+    Role='AWSGlueServiceRole',
+    Command={
+        'Name': 'glueetl',
+        'ScriptLocation': 's3://my-bucket/scripts/etl_job.py'
+    },
+    DefaultArguments={
+        '--job-language': 'python',
+        '--job-bookmark-option': 'job-bookmark-enable'
+    },
+    MaxRetries=3
+)
+
+# เริ่มทำงาน Glue Job
+job_run = glue_client.start_job_run(JobName='my-etl-job')
+print(f"Started job run with ID: {job_run['JobRunId']}")
+```
+
+### ขั้นตอนที่ 3: ทำข้อสอบจำลอง
+- ทำข้อสอบจำลองจาก AWS
+- ทำข้อสอบจากผู้ให้บริการอื่นๆ เช่น Whizlabs, Tutorials Dojo
+- วิเคราะห์ข้อผิดพลาดและทบทวนเนื้อหาที่ยังไม่เข้าใจ
+
+## เทคนิคการทำข้อสอบ
+
+พี่มีเทคนิคในการทำข้อสอบที่อยากแชร์ให้น้องๆ:
+
+1. **อ่านโจทย์ให้ละเอียด** - บางครั้งโจทย์มีคำสำคัญที่ชี้นำคำตอบ
+2. **ตัดตัวเลือกที่ไม่เกี่ยวข้องออกก่อน** - ช่วยให้เหลือตัวเลือกที่เป็นไปได้น้อยลง
+3. **พิจารณาเรื่องค่าใช้จ่ายและประสิทธิภาพ** - AWS มักถามเรื่องการเลือกบริการที่มีประสิทธิภาพและคุ้มค่าที่สุด
+4. **คิดถึงความปลอดภัยเสมอ** - ถ้ามีตัวเลือกที่เกี่ยวกับความปลอดภัย มักจะเป็นคำตอบที่ถูกต้อง
+5. **จัดการเวลาให้ดี** - มีเวลาทำข้อสอบ 130 นาที สำหรับ 65 ข้อ ควรใช้เวลาไม่เกิน 2 นาทีต่อข้อ
+
+## แหล่งเรียนรู้เพิ่มเติม
+
+พี่แนะนำแหล่งเรียนรู้เพิ่มเติมสำหรับการเตรียมตัวสอบ:
+
+1. [AWS Skill Builder](https://explore.skillbuilder.aws/) - มีคอร์สฟรีและเสียเงินสำหรับการเตรียมสอบ
+2. [AWS Documentation](https://docs.aws.amazon.com/) - เอกสารอ้างอิงสำหรับทุกบริการของ AWS
+3. [AWS Blog](https://aws.amazon.com/blogs/big-data/) - บทความเกี่ยวกับ Big Data บน AWS
+4. [A Cloud Guru](https://acloudguru.com/) - คอร์สเตรียมสอบที่มีคุณภาพ (เสียค่าใช้จ่าย)
+5. [Udemy](https://www.udemy.com/) - มีคอร์สเตรียมสอบราคาไม่แพง
+
+---
+
+การสอบ AWS Certified Data Engineer - Associate (DEA-C01) อาจดูยากในตอนแรก แต่ถ้าเตรียมตัวอย่างเป็นระบบและฝึกปฏิบัติจริง น้องๆ จะสามารถผ่านการสอบได้อย่างแน่นอน! ใบรับรองนี้จะช่วยเพิ่มโอกาสในการหางานและพัฒนาความก้าวหน้าในอาชีพด้าน Data Engineering อย่างมาก
+
+พี่หวังว่าบทความนี้จะช่วยให้น้องๆ เข้าใจภาพรวมของการสอบและมีแนวทางในการเตรียมตัวที่ชัดเจนขึ้น หากมีคำถามหรือต้องการคำแนะนำเพิ่มเติม สามารถติดต่อพี่ได้เสมอนะครับ สู้ๆ!
