@@ -2,6 +2,7 @@
 layout: post
 title: "เฟรมเวิร์คสำหรับ Data Engineer: เลือกใช้อย่างไรให้เหมาะกับงาน"
 author: "Weerawat"
+date: 2025-04-27
 categories: [Concept, Data Engineering, Best Practices]
 tags: [Frameworks, Data Engineering, ETL, draft-A]
 ---

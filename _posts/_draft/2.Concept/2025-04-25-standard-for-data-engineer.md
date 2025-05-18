@@ -2,6 +2,7 @@
 layout: post
 title: "มาตรฐานสำหรับ Data Engineer: สิ่งที่ควรรู้และนำไปใช้"
 author: "Weerawat"
+date: 2025-04-25
 categories: [Concept, Data Engineering, Best Practices]
 tags: [Standards, Data Engineering, Best Practices, draft-A]
 ---

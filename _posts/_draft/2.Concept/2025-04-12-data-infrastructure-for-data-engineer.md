@@ -2,6 +2,7 @@
 layout: post
 title: "Data Infrastructure สำหรับ Data Engineer: การออกแบบโครงสร้างพื้นฐานที่แข็งแกร่ง"
 date: 2025-05-12
+author: "Weerawat"
 categories: [Concept, Data Engineering, Infrastructure]
 tags: [data infrastructure, architecture, scalability, reliability, draft-A]
 image: assets/images/data-infrastructure-cover.jpg

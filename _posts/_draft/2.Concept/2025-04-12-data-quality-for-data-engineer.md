@@ -2,6 +2,7 @@
 layout: post
 title: "Data Quality สำหรับ Data Engineer: ทำอย่างไรให้ข้อมูลน่าเชื่อถือ"
 date: 2025-05-12
+author: Weerawat
 categories: [Concept, Data Engineering, Best Practices]
 tags: [data quality, testing, monitoring, validation, draft-A]
 image: assets/images/data-quality-cover.jpg

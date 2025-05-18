@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Database สำหรับ Data Engineer: เลือกใช้อย่างไรให้เหมาะสม"
-date: 2025-05-12
+date: 2025-04-04
+author: "Weerawat"
 categories: [Concept, Data Engineering, Database]
 tags: [database, sql, nosql, data modeling, draft-A]
 image: assets/images/database-cover.jpg

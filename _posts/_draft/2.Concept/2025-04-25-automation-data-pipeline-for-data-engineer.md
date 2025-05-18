@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "การทำ Automation Data Pipeline สำหรับ Data Engineer มือใหม่"
-date: 2025-05-12
+date: 2025-04-25
+author: Weerawat
 categories: [Concept]
 tags: [data pipeline, automation, workflow, orchestration, draft-A]
 image: assets/images/automation-pipeline-cover.jpg

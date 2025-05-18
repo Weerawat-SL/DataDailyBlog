@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "CI/CD สำหรับ Data Engineer: ทำไมต้องใช้และเริ่มต้นอย่างไร"
-date: 2025-05-12
+date: 2025-04-20
+author: Weerawat
 categories: [Concept]
 tags: [cicd, devops, automation, testing, draft-A]
 image: assets/images/cicd-cover.jpg

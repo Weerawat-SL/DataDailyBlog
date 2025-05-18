@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Data Engineer VS Analytics Engineer: ความแตกต่างและการทำงานร่วมกัน"
-date: 2025-05-12
+date: 2025-04-23
+author: "Weerawat"
 categories: [Concept, Data Engineering, Career]
 tags: [data engineer, analytics engineer, career path, data roles, draft-A]
 image: assets/images/de-vs-ae-cover.jpg

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Data Governance สำหรับ Data Engineer: ทำไมต้องใส่ใจและเริ่มต้นอย่างไร"
-date: 2025-05-12
+date: 2025-05-16
+author: Weerawat
 categories: [Concept, Data Engineering, Best Practices]
 tags: [data governance, data quality, metadata management, data catalog, draft-A]
 image: assets/images/data-governance-cover.jpg

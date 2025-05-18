@@ -2,6 +2,7 @@
 layout: post
 title: "Data Security สำหรับ Data Engineer: ปกป้องข้อมูลอย่างไรให้ปลอดภัย"
 date: 2025-05-12
+author: Weerawat
 categories: [Concept, Data Engineering, Security]
 tags: [data security, encryption, access control, compliance, draft-A]
 image: assets/images/data-security-cover.jpg

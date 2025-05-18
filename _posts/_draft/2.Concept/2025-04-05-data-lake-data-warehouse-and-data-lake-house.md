@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Data Lake, Data Warehouse และ Data Lakehouse: เลือกใช้แบบไหนดี?"
-date: 2025-05-12
+author: "Weerawat"
+date: 2025-04-05
 categories: [Concept, Data Engineering, Architecture]
 tags: [data lake, data warehouse, data lakehouse, architecture, draft-A]
 image: assets/images/data-storage-cover.jpg

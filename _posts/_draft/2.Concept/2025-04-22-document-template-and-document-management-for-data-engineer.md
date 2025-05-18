@@ -2,6 +2,7 @@
 layout: post
 title: "เทมเพลตเอกสารและการจัดการเอกสารสำหรับ Data Engineer: ทำไมถึงสำคัญและเริ่มต้นอย่างไร"
 author: "Weerawat"
+date: 2025-04-22
 categories: [Concept, Data Engineering, Best Practices]
 tags: [Documentation, Data Engineering, Best Practices, draft-A]
 ---
