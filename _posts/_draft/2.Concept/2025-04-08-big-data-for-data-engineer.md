@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Big Data สำหรับ Data Engineer มือใหม่: เริ่มต้นอย่างไรให้ไม่สับสน"
-date: 2025-05-12
+author: "Weerawat"
+date: 2025-04-08
 categories: [Concept]
 tags: [big data, hadoop, spark, data processing, draft-A]
 image: assets/images/big-data-cover.jpg

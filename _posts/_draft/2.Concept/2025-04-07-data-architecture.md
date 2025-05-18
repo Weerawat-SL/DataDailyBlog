@@ -2,7 +2,7 @@
 layout: post
 title: "สถาปัตยกรรมข้อมูลสำหรับมือใหม่: จากศูนย์สู่การออกแบบที่มีประสิทธิภาพ"
 author: "Weerawat"
-date: 2025-05-12
+date: 2025-04-07
 categories: [Concept]
 tags: [Data Architecture, Data Engineering, draft-A]
 ---

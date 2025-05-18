@@ -2,6 +2,7 @@
 layout: post
 title:  "Data Maturity Model: เข็มทิศสำหรับ Data Engineer มือใหม่"
 author: "Weerawat"
+date: 2025-04-17
 categories: [Concept, Data Engineering, Best Practices]
 tags: [Data Engineering, Data Maturity, draft-A]
 ---
